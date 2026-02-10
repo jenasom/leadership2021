@@ -37,21 +37,21 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Sarah Chen',
     role: 'Student, Grade 11',
     content: 'YouthLead didn’t just teach me how to lead a team; it taught me how to listen and empathize. I feel ready for university and beyond.',
-    avatar: 'https://picsum.photos/seed/sarah/100/100'
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150'
   },
   {
     id: '2',
     name: 'Marcus Thorne',
     role: 'Alumni, Start-up Founder',
     content: 'The mentor network here is unparalleled. The skills I learned at 16 are the same ones I use today to run my company.',
-    avatar: 'https://picsum.photos/seed/marcus/100/100'
+    avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=150&h=150'
   },
   {
     id: '3',
     name: 'Elena Rodriguez',
     role: 'Parent',
     content: 'Seeing my daughter grow from a shy student to a confident community organizer has been the highlight of our year.',
-    avatar: 'https://picsum.photos/seed/elena/100/100'
+    avatar: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=150&h=150'
   }
 ];
 

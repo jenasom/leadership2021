@@ -1,6 +1,13 @@
 
 import React from 'react';
 
+const AVATARS = [
+  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64",
+  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64",
+  "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=64&h=64",
+  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=64&h=64"
+];
+
 export const Hero: React.FC = () => {
   return (
     <div className="relative pt-32 pb-20 overflow-hidden">
@@ -37,8 +44,8 @@ export const Hero: React.FC = () => {
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://picsum.photos/seed/youthleadership/1200/600" 
-              alt="Teens collaborating" 
+              src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=1200&h=600" 
+              alt="Diverse group of teenagers laughing and collaborating" 
               className="w-full object-cover h-[400px] md:h-[500px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
@@ -48,8 +55,8 @@ export const Hero: React.FC = () => {
           <div className="absolute -bottom-10 -right-6 md:right-10 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden sm:block">
             <div className="flex items-center gap-4 mb-2">
               <div className="flex -space-x-3">
-                {[1,2,3,4].map(i => (
-                  <img key={i} src={`https://picsum.photos/seed/student${i}/40/40`} className="w-10 h-10 rounded-full border-2 border-white shadow-sm" alt="Student" />
+                {AVATARS.map((src, i) => (
+                  <img key={i} src={src} className="w-10 h-10 rounded-full border-2 border-white shadow-sm object-cover" alt="Student" />
                 ))}
               </div>
               <span className="font-bold text-slate-900">5,000+ Students</span>
